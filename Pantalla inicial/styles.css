@@ -1,0 +1,98 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 0px;
+}
+
+body
+{
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	background: #abbaab;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	opacity: 90%;
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(168,7,7,1) 0%, rgba(255,255,255,0.9808123078332895) 0%, rgba(218,218,218,1) 100%);
+}
+.logo{
+	width: 100px;
+}
+.inicio{
+	background:  #f2f3f4;
+	margin: 5% 8%;
+	box-shadow: 5px 5px 20px #000;
+	padding: 20px 45px;
+	border-radius: 10px;
+	text-align: center;
+}
+.inicio h1{
+	font-family: 'Roboto Slab', serif;
+	margin: 20px auto 50px auto;
+	font-size: 40px;
+	color:  #5d6d7e;
+	opacity: 60%;
+}
+.btn-grad {
+	background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%)
+}
+.btn-grad {
+	width: 300px;
+	height: 60px;
+	margin: 22px auto;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+.icon-svg{
+	transition: all 0.2s cubic-bezier(0.3, 0, 0, 1);
+	margin-right: 0.25em;
+	width: 10px;
+	height: 10px;
+	color: #111111;
+	fill: currentColor;
+}
+.login p{
+	margin-top: 15px;
+	height: 20px;
+	text-align: center;
+	color: black;
+	font-size: 13px;
+}
+.login a{
+	color: #5d6d7e;
+	text-decoration: none;
+	font-size: 13px;
+}
+.login a:hover{
+	color:    #0c102e;
+}
+footer .barra-footer{
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 100%;
+	border-radius: 0px;
+	color: white;
+}
