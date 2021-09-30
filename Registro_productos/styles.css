@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 0px;
+}
+
+body
+{
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	background: #abbaab;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0px;
+	opacity: 90%;
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(168,7,7,1) 0%, rgba(255,255,255,0.9808123078332895) 0%, rgba(218,218,218,1) 100%);
+}
+.logo{
+	width: 100px;
+}
+.form-registro{
+	width: 90%;
+	background: white;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 60px;
+	margin-bottom: 75px;
+	padding: 40px 0;
+	border-radius: 10px;
+	box-shadow: 5px 5px 20px #000;
+}
+.col-formulario{
+	padding: 0 8%;
+	border-radius: 0px;
+}
+.col-carrito{
+	width: 35%;
+	padding: 0 10px;
+}
+.content{
+	width: 100%
+	flex-wrap: wrap;
+}
+.form-registro h4{
+	display: block;
+	font-family: 'Roboto Slab', serif;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: left;
+	color:  #5d6d7e;
+	opacity: 75%;
+}
+.form-control{
+	display: block;
+	margin-top: 10px;
+	height: 35px;
+}
+.action-btn{
+	flex-wrap: wrap;
+	margin-top: 15px;
+}
+.btn-grad {
+	background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%)
+}
+.btn-grad {
+	padding: 8px 30px;
+	margin-top: 15px;
+	margin-right: 5%;
+	text-align: center;
+	text-transform: uppercase;
+	transition: 0.5s;
+	background-size: 200% auto;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+.btn-grad:hover {
+	background-position: right center; /* change the direction of the change here */
+	color: #fff;
+	text-decoration: none;
+}
+.icon-svg{
+	transition: all 0.2s cubic-bezier(0.3, 0, 0, 1);
+	margin-right: 0.25em;
+	width: 10px;
+	height: 10px;
+	color: #111111;
+	fill: currentColor;
+}
+.content a{
+	color: black;
+	text-decoration: none;
+}
+
+footer .barra-footer{
+	background: #000000;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 100%;
+	border-radius: 0px;
+	color: white;
+}

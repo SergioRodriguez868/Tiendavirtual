@@ -1,0 +1,128 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+
+body
+{
+	font-family: 'Roboto Slab', serif;
+	font-size: 15px;
+	background-image: url(img/fondo4.jpg);
+}
+header
+{
+	padding: 15px 20px 15px 20px;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	z-index: 2;
+	opacity: 90%;
+	background: rgb(2,0,36);
+	background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(168,7,7,1) 0%, rgba(255,255,255,0.9808123078332895) 0%, rgba(218,218,218,1) 100%);
+}
+header .container
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+header .container .logo
+{
+	width: 130px;
+	margin-left: 10px;
+}
+header .container nav a
+{
+	color: black;
+	text-decoration: none;
+	margin: 0 15px 0px 15px;
+}
+header .container nav a:hover
+{
+	color: black;
+	font-weight: bold;
+	text-decoration: none;
+	margin: 0 15px 0 15px;
+}
+.login{
+	width: 350px;
+	height: 450px;
+	background:  #f2f3f4;
+	margin: auto;
+	margin-top: 75px;
+	margin-bottom: 65px;
+	box-shadow: 5px 5px 20px #000;
+	padding: 25px 25px;
+}
+.login h1{
+	font-family: 'Roboto Slab', serif;
+	margin-top: 20px;
+	height: 25px;
+	margin-bottom: 40px;
+	text-align: left;
+	font-size: 30px;
+	color:  #5d6d7e;
+	opacity: 60%;
+}
+.controles{
+	width: 100%;
+	height: 25px;
+	border: 1px solid #5d6d7e;
+	margin-bottom: 15px;
+}
+.check{
+	
+	font-size: 13px;
+	margin-bottom: 20px;
+}
+.boton{
+	font-family: 'Roboto Slab:wght@500', serif;
+	font-size: 15px;
+	font-weight: bold;
+	width: 200px;
+	height: 30px;
+	margin-top: 15px;
+	margin-bottom: 20px;
+	margin-left: 50px;
+	background-color: #fbec03;
+	border: none;
+	color: black;
+}
+.boton:hover{
+	font-weight: bold;
+	background-color:   #ffc100;
+}
+.login p{
+	height: 20px;
+	text-align: center;
+	color: black;
+	font-size: 13px;
+}
+.login a{
+	color: #5d6d7e;
+	text-decoration: none;
+	font-size: 13px;
+}
+.login a:hover{
+	color:    #0c102e;
+}
+footer{
+	box-sizing: border-box;
+	border-radius: 0px;
+	width: 100%;
+}
+footer .barra-footer{
+	background-color: #fbec03;
+	text-align: center;
+	padding-right: 15px;
+	padding-left: 15px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	width: 100%;
+	border-radius: 0px;
+}
