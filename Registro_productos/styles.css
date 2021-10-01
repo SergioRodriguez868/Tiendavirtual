@@ -69,7 +69,8 @@ header{
 	background-image: linear-gradient(to right, #000000 0%, #0f9b0f  51%, #000000  100%)
 }
 .btn-grad {
-	padding: 8px 30px;
+	width: 160px;
+	height: 50px;
 	margin-top: 15px;
 	margin-right: 5%;
 	text-align: center;

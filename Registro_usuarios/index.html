@@ -11,7 +11,7 @@
 		<link rel="stylesheet" href="styles.css">
 		<script src="https://kit.fontawesome.com/821bc30c51.js" crossorigin="anonymous"></script>
 		<title>
-			Login
+			Registro usuarios
 		</title>
 	</head>
 	<body>
@@ -45,38 +45,44 @@
 			  </div>
 			</nav>
 		</header>
-		<section class="login">
-			<h1>Iniciar sesión</h1>
-			<form action="prueba.php" method="post">
-				<label for="usuario">Usuario:</label><br>
-				<input class="controles" type="text" name="user" value=""><br>
-				<label for="password">Contraseña:</label><br>
-				<input class= "controles" type="password" name="password" id="password" value=""><br>
-				<div class="check">
-					<input style="margin-right: 7px;" type="checkbox" name="mostrar" id="mostrar_contraseña">Mostrar contraseña<br>
+		<section class="form-registro">
+			<form class="col-formulario" action="prueba.php" method="post">
+				<h4>Datos de contacto</h4>
+				<div class="content">
+					<div class="form-row">
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Nombres">
+					    </div>
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Apellidos">
+					    </div>
+					</div>
+					<input class="form-control" type="text" placeholder="Identificación o ID">
+					<input class="form-control" type="text" placeholder="Correo electrónico">
+					<div class="form-row">
+					    <div class="col-1">
+					      <input type="text" class="form-control" placeholder="Ext.">
+					    </div>
+					    <div class="col-5">
+					      <input type="text" class="form-control" placeholder="Celular">
+					    </div>
+					</div>
+					<h4>Información de registro</h4>
+					<div class="form-row">
+						<div class="col-6">
+							<input class="form-control" type="text" placeholder="Nombre de usuario">
+						</div>
+					</div>
+					<div class="form-row">
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Contraseña">
+					    </div>
+					    <div class="col">
+					      <input type="text" class="form-control" placeholder="Confirmar contraseña">
+					    </div>
+					</div>
+					<button type="submit" class="btn btn-primary btn-grad mb-2">Continuar</button>
 				</div>
-				<button type="submit" class="btn btn-primary btn-grad mb-2">Continuar</button>
-				<p>
-					¿No estas registrado? 
-					<a href=""> Registrarse</a><br>
-					<a href="">¿Olvidaste tu contraseña?</a>
-				</p>
-				
-				<script>
-				$(document).ready(function () {
-				  $('#mostrar_contraseña').click(function () {
-				    if ($('#mostrar_contraseña').is(':checked')) {
-				      $('#contraseña').attr('type', 'text');
-				    } else {
-				      $('#contraseña').attr('type', 'password');
-				    }
-				  });
-				});
-				</script>
-
-				<?php
-					include("log.php");
-				?>
 			</form> 
 		</section>
 		<footer>
