@@ -9,6 +9,8 @@ body
 {
 	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
+	align-items: center;
+	justify-content: space-between;
 	background: #abbaab;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -24,10 +26,13 @@ header{
 .logo{
 	width: 100px;
 }
-.form-registro{
+.lista{
 	width: 90%;
 	background: white;
-	margin: 6% auto 6% auto;
+	margin-top: 5%;
+	margin-bottom: auto;
+	margin-right: auto;
+	margin-left: auto;
 	padding: 40px 3%;
 	border-radius: 10px;
 	box-shadow: 5px 5px 20px #000;
@@ -40,7 +45,7 @@ header{
 	width: 100%;
 	flex-wrap: wrap;
 }
-.form-registro h4{
+.lista h4{
 	display: block;
 	font-family: 'Roboto Slab', serif;
 	margin-top: 20px;
@@ -86,6 +91,8 @@ header{
 }
 
 footer .barra-footer{
+	position: absolute;
+	bottom: 0px;
 	background: #000000;  /* fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #0f9b0f, #000000);  /* Chrome 10-25, Safari 5.1-6 */
 	background: linear-gradient(to right, #0f9b0f, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */

@@ -1,12 +1,11 @@
+@charset "ISO-8859-1";
 *{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 	border-radius: 0px;
 }
-
-body
-{
+body{
 	font-family: 'Roboto Slab', serif;
 	font-size: 15px;
 	background: #abbaab;  /* fallback for old browsers */
