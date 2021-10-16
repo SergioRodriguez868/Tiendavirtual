@@ -12,33 +12,33 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import co.edu.unbosque.ciclo3back.dao.UsuariosDAO;
-import co.edu.unbosque.ciclo3back.model.Usuarios;
+import co.edu.unbosque.ciclo3back.dao.FacturaDAO;
+import co.edu.unbosque.ciclo3back.model.Factura;
 
 @RestController //esta es una clase REST
-@RequestMapping("/usuarios")
-public class UsuariosAPI {
+@RequestMapping("/factura")
+public class FacturaAPI {
 	
-	@Autowired //inyecta la dependencia de todos los métodos del JPA para usuarioDAO
-	private UsuariosDAO usuariosDAO;
+	@Autowired //inyecta la dependencia de todos los métodos del JPA
+	private FacturaDAO facturaDAO;
 	
 	@PostMapping("/guardar")//Request convierte en un objeto Java desde un JSon
-	public void guardar(@RequestBody Usuarios usuarios) {
-		usuariosDAO.save(usuarios);
+	public void guardar(@RequestBody Factura factura) {
+		facturaDAO.save(factura);
 	}
 	
 	@GetMapping("/listar")
-	public List<Usuarios> listar(){
-		return usuariosDAO.findAll();
+	public List<Factura> listar(){
+		return facturaDAO.findAll();
 	}
 	
 	@DeleteMapping("/eliminar/{id}")
-	public void eliminar(@PathVariable("id") String id) {
-		usuariosDAO.deleteById(id);
+	public void eliminar(@PathVariable("id") Long id) {
+		facturaDAO.deleteById(id);
 	}
 	
 	@PutMapping("/actualizar")
-	public void actualizar(@RequestBody Usuarios usuarios) {
-		usuariosDAO.save(usuarios);
+	public void actualizar(@RequestBody Factura factura) {
+		facturaDAO.save(factura);
 	}
 }
